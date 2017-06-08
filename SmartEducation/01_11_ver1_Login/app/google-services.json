@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "547631591198",
+    "firebase_url": "https://mylogindata-3cc07.firebaseio.com",
+    "project_id": "mylogindata-3cc07",
+    "storage_bucket": "mylogindata-3cc07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547631591198:android:0b89feba6f176ce5",
+        "android_client_info": {
+          "package_name": "clean6265.com.naver.blog.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547631591198-ja6tr30k8bf46nb4oe242nh3qup8n0eo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSDdv3C8czx8IBrHPuOg5HC22zJhQEP50"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547631591198-ja6tr30k8bf46nb4oe242nh3qup8n0eo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

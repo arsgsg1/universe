@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fun"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="clean6265.com.naver.blog.login.RegisterKidsActivity">
+
+    <RelativeLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="학생 정보 등록창"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewUserEmail"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp" />
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView"
+            android:scaleType="centerInside"
+            android:layout_alignTop="@+id/editTextName"
+            android:layout_alignLeft="@+id/buttonDefault"
+            android:layout_alignStart="@+id/buttonDefault" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장하기"
+
+            android:layout_alignBaseline="@+id/buttonDefault"
+            android:layout_alignBottom="@+id/buttonDefault"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/buttonDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="뒤로가기"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/buttonChoose"
+            android:text="사진선택"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="로그아웃"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonLogOut"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:hint ="이름"
+            android:layout_marginTop="114dp"
+            android:layout_below="@+id/textViewUserEmail"
+            android:layout_alignLeft="@+id/editTextClass"
+            android:layout_alignStart="@+id/editTextClass" />
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="173dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:hint ="학년"
+            android:layout_above="@+id/editTextClass"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:allowUndo="false"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/editTextClass"
+            android:inputType="number"
+            android:hint ="반"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignLeft="@+id/editTextPhoneNum"
+            android:layout_alignStart="@+id/editTextPhoneNum"
+            android:maxLength="2" />
+
+        <EditText
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editTextPhoneNum"
+            android:hint="휴대폰번호"
+            android:layout_alignBottom="@+id/buttonChoose"
+            android:layout_alignLeft="@+id/editTextAge"
+            android:layout_alignStart="@+id/editTextAge" />
+
+        <EditText
+            android:id="@+id/editTextNum"
+            android:inputType="number"
+            android:hint ="번호"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextAge"
+            android:layout_alignLeft="@+id/buttonSave"
+            android:layout_alignStart="@+id/buttonSave"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:maxLength="2" />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

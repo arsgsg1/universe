@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="clean6265.com.naver.blog.login">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Smart Education"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label,icon,allowBackup">
+        <activity android:name=".RegisterTeacherActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterKidsActivity" />
+        <activity android:name=".KidsGroundActivity" />
+        <activity android:name=".DataUploadActivity" />
+        <activity android:name=".PlutoconListActivity" />
+        <activity android:name=".DataInBeaconActivity" />
+        <activity android:name=".KidsRememberActivity" />
+        <activity android:name=".StPlutoconListActivity" />
+        <activity android:name=".OldQuestActivity"></activity>
+    </application>
+
+</manifest>
