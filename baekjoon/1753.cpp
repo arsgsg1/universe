@@ -12,7 +12,6 @@ why?) vertex의 개수가 10만개라면 배열의 경우 그 관계를 표현하는데 10만 x 10만 = 
 그러나 인접리스트는 혹시 고립되어 있는 vertex는 간선이 없기 때문에 입력루틴에서 배제하고 시작하여 메모리적인 관점에서 이득을 볼 수 있습니다.
 */
 using namespace std;
-vector<pair<int, int> >adj[20001];		//1<= vertex <= 20000
 void path(int *arr, int index) {
 	//재귀함수로 이전 vertex를 거쳐가면서 경로를 출력합니다. 문제에 정답과 관련된 것은 아니지만 참고용입니다.
 	if (arr[index] == 0 || arr[index] == -1) {
@@ -25,11 +24,13 @@ void path(int *arr, int index) {
 }
 int main()
 {
+	vector<pair<int, int> > *adj = 0;
 	int numofV, numofE, startV;
 	cin >> numofV;
 	cin >> numofE;
 	cin >> startV;
-
+	
+	adj = new vector<pair<int, int> >[numofV + 1];
 	for (int i = 0; i < numofE; i++) {
 		int start, end, cost;
 		cin >> start;
@@ -46,7 +47,7 @@ int main()
 	visited[startV] = 0;
 
 	priority_queue<pair<int, int> > pq;			//priority queue로 cost에 따라 edge들을 정렬합니다.
-	//why?) priority queue로 정렬하는 이유는 배열방식은 모든 n-1개의 vertex를 탐색하려 하지만 priority queue로 모든 edge들을 정렬로 하여금 필요한 vertex만을 방문하여  불필요한 vertex 방문을 줄이고자 함입니다.
+												//why?) priority queue로 정렬하는 이유는 배열방식은 모든 n-1개의 vertex를 탐색하려 하지만 priority queue로 모든 edge들을 정렬로 하여금 필요한 vertex만을 방문하여  불필요한 vertex 방문을 줄이고자 함입니다.
 	pq.push(make_pair(0, startV));
 
 	while (!pq.empty()) {
@@ -76,15 +77,14 @@ int main()
 	}
 
 	/*for (int i = 1; i <= numofV; i++) {		//경로를 출력하는 부분입니다. 정답과 연관된 것은 아니지만 참고용입니다. 주석을 해제하면 경로를 볼 수 있습니다.
-		cout << i << " : ";
-		if (visited[i] != -1)
-			path(visited, i);
-		else
-			cout << "x";
-
-		cout << endl;
+	cout << i << " : ";
+	if (visited[i] != -1)
+	path(visited, i);
+	else
+	cout << "x";
+	cout << endl;
 	}*/
-
+	delete[] adj;
 	delete[] dist;
 	delete[] visited;
 	return 0;
