@@ -9,7 +9,7 @@
 #define KLOGGER_NAME_UNICODE	L"KDFINJ"
 
 // Debug/Release 빌드 상관없이 디버그 로깅 활성화
-//#define KLOGGER_FORCE_ENABLE
+#define KLOGGER_FORCE_ENABLE
 
 // DebugView에 디버그 메시지 출력
 #define KLOGGER_LOG_TO_DEBUG_VIEW
