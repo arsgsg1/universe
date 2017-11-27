@@ -5,8 +5,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 // 이름
-#define KLOGGER_NAME			"KDFINJ"
-#define KLOGGER_NAME_UNICODE	L"KDFINJ"
+#define KLOGGER_NAME			"KDF"
+#define KLOGGER_NAME_UNICODE	L"KDF"
 
 // Debug/Release 빌드 상관없이 디버그 로깅 활성화
 #define KLOGGER_FORCE_ENABLE
